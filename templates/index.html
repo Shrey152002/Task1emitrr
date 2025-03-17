@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Transcript Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Medical Transcript Analyzer</h1>
+            <p>Upload a medical conversation transcript to generate a structured medical report</p>
+        </header>
+
+        <div class="form-container">
+            <form id="transcriptForm">
+                <div class="form-group">
+                    <label for="transcript">Medical Transcript:</label>
+                    <textarea id="transcript" name="transcript" rows="15" placeholder="Paste your medical transcript here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="processBtn">Process Transcript</button>
+                    <button type="button" id="sampleBtn">Load Sample</button>
+                    <button type="button" id="clearBtn">Clear</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="result-container" id="resultContainer">
+            <h2>Medical Report</h2>
+            <div class="result-loading" id="loadingIndicator">
+                <div class="spinner"></div>
+                <p>Processing transcript...</p>
+            </div>
+            <div class="result-content" id="resultContent">
+                <div class="report-section">
+                    <h3>Patient Information</h3>
+                    <div class="info-card">
+                        <div class="info-item">
+                            <strong>Name:</strong>
+                            <span id="patientName">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="report-section">
+                    <h3>Clinical Assessment</h3>
+                    <div class="info-card">
+                        <div class="info-item">
+                            <strong>Symptoms:</strong>
+                            <ul id="symptoms"></ul>
+                        </div>
+                        <div class="info-item">
+                            <strong>Diagnosis:</strong>
+                            <span id="diagnosis">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="report-section">
+                    <h3>Treatment & Status</h3>
+                    <div class="info-card">
+                        <div class="info-item">
+                            <strong>Treatment:</strong>
+                            <ul id="treatment"></ul>
+                        </div>
+                        <div class="info-item">
+                            <strong>Current Status:</strong>
+                            <span id="currentStatus">-</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Prognosis:</strong>
+                            <span id="prognosis">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="report-section">
+                    <h3>Important Medical Phrases</h3>
+                    <div class="info-card">
+                        <ul id="medicalPhrases"></ul>
+                    </div>
+                </div>
+
+                <div class="export-buttons">
+                    <button id="exportJson">Export as JSON</button>
+                    <button id="exportTxt">Export as Text</button>
+                </div>
+            </div>
+            
+            <div class="result-error" id="resultError">
+                <p>An error occurred while processing the transcript. Please try again.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Medical Transcript Analyzer | Powered by NLP Technology</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
