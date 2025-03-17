@@ -24,7 +24,7 @@ The Medical Transcript Analyzer extracts key medical information from doctor-pat
 3. Information is organized into a structured medical report format
 4. Results are displayed in an easy-to-read interface
 
-## Sample Output
+## Output
 
 The application generates a comprehensive medical report with the following sections:
 
