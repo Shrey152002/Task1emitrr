@@ -7,7 +7,7 @@ A Flask-based web application that processes medical conversation transcripts an
 
 The Medical Transcript Analyzer extracts key medical information from doctor-patient conversation transcripts and organizes it into a structured format. The application uses spaCy for NLP processing and pattern matching to identify important medical entities and context.
 
-![Medical Transcript Analyzer Interface]([Screenshot 2025-03-17 124022.png](https://github.com/Shrey152002/Task1emitrr/blob/main/Screenshot%202025-03-17%20124022.png))
+![Medical Transcript Analyzer Interface](https://github.com/Shrey152002/Task1emitrr/blob/main/Screenshot%202025-03-17%20124022.png)
 
 ## Features
 
