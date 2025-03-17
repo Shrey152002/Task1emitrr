@@ -29,10 +29,10 @@ The Medical Transcript Analyzer extracts key medical information from doctor-pat
 The application generates a comprehensive medical report with the following sections:
 
 **Patient Information:**
-![Patient Information](Screenshot 2025-03-17 124043.png)
+![Patient Information](https://github.com/Shrey152002/Task1emitrr/blob/main/Screenshot%202025-03-17%20124043.png)
 
 **Treatment, Status, and Medical Phrases:**
-![Treatment and Status](Screenshot 2025-03-17 124114.png)
+![Treatment and Status](https://github.com/Shrey152002/Task1emitrr/blob/main/Screenshot%202025-03-17%20124114.png)
 
 ## Technical Details
 
